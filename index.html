@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>STRONA 22 LISTOPADA</title>
+    <style>
+    html{
+	font-family: sans-serif;
+    text-align: justify;
+	background-color: #fce9ce;}
+    body{
+    width: 1200px;
+	margin: 0 auto;}
+    h1{
+	text-align: center;
+	background-color: yellowgreen;
+	padding: 5px;}
+    </style>
+</head>
+<body>
+<h1>Formularze</h1>
+<form>
+<h2>Text</h2>
+<input type="text" name="login" id="" value="" placeholder="Wpisz login">
+<br>
+<br>
+<hr>
+<h2>Password</h2>
+<input type="password" name="haslo" id="" value="" placeholder="Wpisz hasło">
+<br>
+<br>
+<hr>
+<h2>Checkbox</h2>
+<input type="checkbox" name="checkbox[]" id="" value="Kebab">Kebab<br>
+<input type="checkbox" name="checkbox[]" id="" value="Pizza">Pizza<br>
+<input type="checkbox" name="checkbox[]" id="" value="Hamburger">Hamburger
+<br>
+<br>
+<hr>
+<h2>Radio</h2>
+<input type="radio" name="radio" id="" value="Kebab">Kebab<br>
+<input type="radio" name="radio" id="" value="Pizza">Pizza<br>
+<input type="radio" name="radio" id="" value="Hamburger">Hamburger<br>
+<br>
+<br>
+<hr>
+<h2>File</h2>
+<input type="file" name="" id="">
+<br>
+<br>
+<hr>
+<h2>Hidden</h2>
+<input type="hidden" name="hidden" value="elo">
+<br>
+<br>
+<hr>
+<button type="submit" onClick="testResults(this.form)">Zatwierdź</button>
+ 
+<SCRIPT LANGUAGE="JavaScript">
+    function testResults (form) {
+        var TestVar = form.login.value;
+        document.write ("Twój login: " + TestVar);
+    }
+    </SCRIPT>
+</form>
+</body> 
+</html>
